@@ -54,18 +54,18 @@ fr:
       reset_password_instructions: "Instructions pour changer le mot de passe"
       unlock_instructions: "Instructions pour déverrouiller le compte"
       reset_password:
-        title: "Bonjour {{email}}!"
+        title: "Bonjour %{email}!"
         description: "Quelqu'un a demander un lien pour changer votre mot de passe, vous pouvez procéder au changement en clickant sur le lien suivant:"
         link: "Changer mon mot de passe"
         advice: "Si vous n'avez pas fait cette demande, ignorez cet email.<br/>
                  Votre mot de passe ne sera pas modifié tant que vous ne clickez pas sur ce lien et que vous en saisissiez un nouveau"
       unlock:
-        title: "Bonjour {{email}}!"
+        title: "Bonjour %{email}!"
         description: "Votre compte a été bloqué due à un grand nombre de tentative de connexion qui ont échouées.<br/>
                       Clicker sur le lien suivant pour débloquer votre compte:"
         link: "Débloquer mon compte"
       confirmations:
-        title: "Bienvenu {{email}}!"
+        title: "Bienvenu %{email}!"
         description: "Clicker sur le lien suivant pour activer votre compte:"
         link: "Confirmer mon compte"
     shared:
@@ -89,17 +89,17 @@ fr:
       accepted: "doit être accepté(e)"
       empty: "doit être rempli(e)"
       blank: "doit être rempli(e)"
-      too_long: "est trop long (pas plus de {{count}} caractères)"
-      too_short: "est trop court (au moins {{count}} caractères)"
-      wrong_length: "ne fait pas la bonne longueur (doit comporter {{count}} caractères)"
+      too_long: "est trop long (pas plus de %{count} caractères)"
+      too_short: "est trop court (au moins %{count} caractères)"
+      wrong_length: "ne fait pas la bonne longueur (doit comporter %{count} caractères)"
       taken: "n'est pas disponible"
       not_a_number: "n'est pas un nombre"
-      greater_than: "doit être supérieur à {{count}}"
-      greater_than_or_equal_to: "doit être supérieur ou égal à {{count}}"
-      equal_to: "doit être égal à {{count}}"
-      less_than: "doit être inférieur à {{count}}"
-      less_than_or_equal_to: "doit être inférieur ou égal à {{count}}"
+      greater_than: "doit être supérieur à %{count}"
+      greater_than_or_equal_to: "doit être supérieur ou égal à %{count}"
+      equal_to: "doit être égal à %{count}"
+      less_than: "doit être inférieur à %{count}"
+      less_than_or_equal_to: "doit être inférieur ou égal à %{count}"
       odd: "doit être impair"
       even: "doit être pair"
-      record_invalid: "La validation a échoué : {{errors}}"
+      record_invalid: "La validation a échoué : %{errors}"
 

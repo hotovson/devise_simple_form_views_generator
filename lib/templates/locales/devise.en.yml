@@ -54,18 +54,18 @@ en:
       reset_password_instructions: 'Reset password instructions'
       unlock_instructions: 'Unlock Instructions'
       reset_password:
-        title: "Hello {{email}}!"
+        title: "Hello %{email}!"
         description: "Someone has requested a link to change your password, and you can do this through the link below:"
         link: "Change my password"
         advice: "If you didn't request this, please ignore this email.<br/>
                  Your password won't change until you access the link above and create a new one"
       unlock:
-        title: "Hello {{email}}!"
+        title: "Hello %{email}!"
         description: "Your account has been locked due to an excessive amount of unsuccessful sign in attempts.<br/>
                       Click the link below to unlock your account:"
         link: "Unlock my account"
       confirmations:
-        title: "Welcome {{email}}!"
+        title: "Welcome %{email}!"
         description: "You can confirm your account through the link below:"
         link: "Confirm account"
     shared:
