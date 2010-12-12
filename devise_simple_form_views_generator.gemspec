@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "lib/generators/devise_simple_form_views/devise_simple_form_views_generator.rb",
      "lib/templates/locales/devise.en.yml",
      "lib/templates/locales/devise_fr.yml",
+     "lib/templates/locales/devise_it.yml",
      "lib/templates/stylesheets/devise_simple_form.css",
      "lib/templates/views/confirmations/new.html.erb",
      "lib/templates/views/mailer/confirmation_instructions.html.erb",
