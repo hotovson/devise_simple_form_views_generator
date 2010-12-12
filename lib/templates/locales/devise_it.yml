@@ -4,6 +4,9 @@ it:
       not_found: "non trovato"
       already_confirmed: "è stato già confermato"
       not_locked: "non era bloccato"
+      not_saved:
+        one: "Non posso salvare questo %{resource}: 1 errore"
+        other: "Non posso salvare questo %{resource}: %{count} errori."
 
   devise:
     failure:
@@ -35,6 +38,7 @@ it:
         resend_confirmation_instructions: "Reinvia le istruzioni di conferma"
     registrations:
       signed_up: "Iscrizione correttamente eseguita. Se abilitata, una conferma è stata inviata al tuo indirizzo email."
+      inactive_signed_up: 'Iscrizione correttamente eseguita. Tuttavia, non possiamo farti accedere perché il tuo account è %{reason}.'
       updated: "Il tuo account è stato aggiornato."
       destroyed: "Arrivederci! L'account è stato cancellato. Speriamo di rivederci presto."
       'new':
@@ -49,10 +53,16 @@ it:
       unlocked: "Il tuo account è stato correttamente sbloccato. Ora sei collegato."
       'new':
         resend_unlock_instructions: "Reinvia le istruzioni per sbloccare il mio account"
+    omniauth_callbacks:
+      success: "Autorizzato con successo dall'account %{kind}."
+      failure: 'Non autorizzato da %{kind} perché "%{reason}".'
     mailer:
-      confirmation_instructions: "Istruzioni per la conferma"
-      reset_password_instructions: "Istruzioni per reimpostare la password"
-      unlock_instructions: "Istruzioni per sbloccare l'account"
+      confirmation_instructions:
+        subject: "Istruzioni per la conferma"
+      reset_password_instructions:
+        subject: "Istruzioni per reimpostare la password"
+      unlock_instructions:
+        subject: "Istruzioni per sbloccare l'account"
       reset_password:
         title: "Benvenuto %{email}!"
         description: "Qualcuno ha richiesto il link per modificare la password, è possibile farlo attraverso il link sottostante."
@@ -72,7 +82,7 @@ it:
       links:    
         didnt_receive_confirmation_instructions?: "Didn't receive confirmation instructions?"
         didnt_receive_unlock_instructions?: "Didn't receive unlock instructions?"
-        sign_in_with_omniauth: "Sign in with %{provider}"
+        sign_in_with_omniauth: "Connettiti con %{provider}"
     
   simple_form:
     labels:
