@@ -72,6 +72,7 @@ fr:
       links:    
         didnt_receive_confirmation_instructions?: "Vous n'avez pas reçu de mail de confirmation?"
         didnt_receive_unlock_instructions?: "Vous n'avez pas reçu de mail de déverrouillage de votre compte?"
+        sign_in_with_omniauth: "Connectez-vous avec %{provider}"
     
   simple_form:
     labels:
