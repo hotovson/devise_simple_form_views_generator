@@ -80,8 +80,8 @@ it:
         link: "Conferma il mio account"
     shared:
       links:    
-        didnt_receive_confirmation_instructions?: "Didn't receive confirmation instructions?"
-        didnt_receive_unlock_instructions?: "Didn't receive unlock instructions?"
+        didnt_receive_confirmation_instructions?: "Non hai ricevuto le istruzioni per la conferma?"
+        didnt_receive_unlock_instructions?: "Non hai ricevuto le istruzioni per lo sblocco?"
         sign_in_with_omniauth: "Connettiti con %{provider}"
     
   simple_form:
