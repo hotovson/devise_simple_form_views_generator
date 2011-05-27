@@ -1,0 +1,85 @@
+cs:
+  errors:
+    messages:
+      not_found: "nenalezen"
+      already_confirmed: "byl již potvrzen"
+      not_locked: "nebyl uzamčen"
+      not_saved:
+        one: "%{resource} nebyl uložen kvůli chybě:"
+        other: "%{resource} nebyl uložen kvůli %{count} chybám:"
+
+  devise:
+    failure:
+      unauthenticated: 'Musíte se zaregistrovat nebo přihlásit, pak můžete pokračovat.'
+      unconfirmed: 'Musíte potvrdit svůj účet, pak můžete pokračovat.'
+      locked: 'Váš účet je uzamčen.'
+      invalid: 'Neplatná identita nebo heslo.'
+      invalid_token: 'Neplatný ověřovací symbol.'
+      timeout: 'Vaše relace vypršela, přihlašte se prosím znovu, pak můžete pokračovat.'
+      inactive: 'Váš účet ještě nebyl aktivován.'
+    sessions:
+      signed_in: 'Přihlášení úspěšné.'
+      signed_out: 'Odhlášení úspěšné.'
+      'new':
+        sign_in: 'Přihlásit'
+    passwords:
+      send_instructions: 'Za pár minut obdržíte email s instrukcemi k nastavení nového hesla.'
+      updated: 'Vaše heslo bylo úspěšně změněno. Nyní jste přihlášen(a).'
+      edit:
+        change_your_password: "Změnit heslo"
+        change_my_password: "Změnit heslo"
+      'new':
+        send_me_reset_password_instructions: "Poslat instrukce k obnovení hesla"
+        forgot_your_password?: "Zapomněli jste heslo?"
+    confirmations:
+      send_instructions: 'Za několik minut obdržíte email s instrukcemi k potvrzení vašeho účtu.'
+      confirmed: 'Váš účet byl úspěšně potvrzen. Nyní jste přihlášen(a).'
+      'new':
+        resend_confirmation_instructions: "Znovu zaslat instrukce k potvrzení"
+    registrations:
+      signed_up: 'Vítejte! Registrace byla úspěšná.'
+      inactive_signed_up: 'Registrace byla úspěšná. Nicméně, nemůžete se přihlásit, protože: "%{reason}".'
+      updated: 'Váš účet byl úspěšně aktualizován.'
+      destroyed: 'Nashle! Váš účet byl úspěšně zrušen. Doufáme, že se brzy opět uvidíme.'
+      'new':
+        sign_up: "Zaregistrovat se"
+      edit:
+        settings: "Můj účet"
+        cancel_my_account: "Zrušit můj účet"
+        password_instruction: "ponechte prázdné, pokud ho nechcete změnit"
+        current_password_instruction: "potřebujeme vaše současné heslo pro potvrzení změn"
+    unlocks:
+      send_instructions: 'Za několik minut obdržíte email s instrukcemi, jak odemknout svůj účet.'
+      unlocked: 'Váš účet byl úspěšně odemknut. Nyní jste přihlášen(a).'
+      'new':
+        resend_unlock_instructions: "Znovu zasat instrukce k odemčení účtu"
+    omniauth_callbacks:
+      success: 'Úspěšná autorizace z účtu %{kind}.'
+      failure: 'Není možné autorizovat z %{kind}, protože: "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Potvrzovací instrukce'
+      reset_password_instructions:
+        subject: 'Instrukce k nastavení nového hesla'
+      unlock_instructions:
+        subject: 'Instrukce k odemknutí účtu'
+      reset_password:
+        title: "Dobrý den %{email}!"
+        description: "Někdo si vyžádal změnu vašeho hesla, můžete to provést pomocí odkazu uvedeného níže:"
+        link: "Změnit moje heslo"
+        advice: "Pokud jste o to nežádali vy, prosím, ignorujte tento email.<br/>
+                 Vaše heslo nebude změněno, dokud nevyužijete výše uvedený odkaz a nevytvoříte nové"
+      unlock:
+        title: "Dobrý den %{email}!"
+        description: "Vaš účet byl uzamčen z důvodu nadměrného počtu neúspěšných pokusů o přihlášení.<br/>
+                      Odemkněte účet kliknutím na odkaz uvedený níže:"
+        link: "Odemknout můj účet"
+      confirmations:
+        title: "Dobrý den %{email}!"
+        description: "Váš účet můžete potvrdit pomocí následujícího odkazu:"
+        link: "Potvrdit účet"
+    shared:
+      links:
+        didnt_receive_confirmation_instructions?: "Nedostali jste potvrzovací instrukce?"
+        didnt_receive_unlock_instructions?: "Nedostali jste instrukce k odemčení účtu?"
+        sign_in_with_omniauth: "Přihlásit pomocí %{provider}"
